@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeninInfo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121214;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #1a1a1e;
+            border-bottom: 2px solid #29292e;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e50914;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .main-container {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 600px;
+            background: #1a1a1e;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            border: 1px solid #29292e;
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .tg-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #0088cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 600;
+        }
+
+        .tg-link:hover {
+            color: #33a1ff;
+            text-decoration: underline;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+        }
+
+        .btn-buy:hover {
+            background-color: #ff1523;
+        }
+
+        .btn-buy:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта с Логотипом -->
+    <header>
+        <div class="logo">ZeninInfo</div>
+    </header>
+
+    <!-- Главный блок контента -->
+    <div class="main-container">
+        <h1>Добро пожаловать</h1>
+        <!-- Ссылка на главный Телеграм -->
+        <a href="https://t.me/zenininternal52" target="_blank" class="tg-link">Наш Телеграм: @zenininternal52</a>
+        <br>
+        <!-- Красная кнопка -->
+        <button class="btn-buy" onclick="showAlert()">Купить Зенин Ключ</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            // Вывод уведомления
+            alert("Привет! Чтобы тебя не обманывать, вот в этом боте можно купить бота: @ZeninDLCBot");
+            // Перенаправление на бота в новой вкладке после закрытия окна
+            window.open("https://t.me/ZeninDLCBot", "_blank");
+        }
+    </script>
+
+</body>
+</html>
+
+
